@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "- express\r - cors\r - morgan\r - dotenv\r - mongoose\r - bcrypt\r - jsonwebtoken",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.3.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MB-Project-Mohammed-Almuziny/server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MB-Project-Mohammed-Almuziny/server/issues"
+  },
+  "homepage": "https://github.com/MB-Project-Mohammed-Almuziny/server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "core-util-is": "^1.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.10.0",
+    "node": "14.16.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "npm": "^8.3.0",
+    "socket.io": "^4.4.0"
+  }
+}
