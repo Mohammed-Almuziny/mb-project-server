@@ -45,9 +45,9 @@ const getCourseReviews = (req, res) => {
       .then((result) => {
         const ratingStatus = {
           oneStar: 0,
-          towStar: 0,
+          twoStar: 0,
           threeStar: 0,
-          foreStar: 0,
+          fourStar: 0,
           fiveStar: 0,
           rating: 0,
           total: result.length,
@@ -60,7 +60,7 @@ const getCourseReviews = (req, res) => {
               ratingStatus.rating += 1;
               break;
             case 2:
-              ratingStatus.towStar++;
+              ratingStatus.twoStar++;
               ratingStatus.rating += 2;
               break;
             case 3:
@@ -68,7 +68,7 @@ const getCourseReviews = (req, res) => {
               ratingStatus.rating += 3;
               break;
             case 4:
-              ratingStatus.foreStar++;
+              ratingStatus.fourStar++;
               ratingStatus.rating += 4;
               break;
             case 5:
@@ -83,12 +83,12 @@ const getCourseReviews = (req, res) => {
 
         ratingStatus.oneStar =
           (ratingStatus.oneStar * 100) / ratingStatus.total;
-        ratingStatus.towStar =
-          (ratingStatus.towStar * 100) / ratingStatus.total;
+        ratingStatus.twoStar =
+          (ratingStatus.twoStar * 100) / ratingStatus.total;
         ratingStatus.threeStar =
           (ratingStatus.threeStar * 100) / ratingStatus.total;
-        ratingStatus.foreStar =
-          (ratingStatus.foreStar * 100) / ratingStatus.total;
+        ratingStatus.fourStar =
+          (ratingStatus.fourStar * 100) / ratingStatus.total;
         ratingStatus.fiveStar =
           (ratingStatus.fiveStar * 100) / ratingStatus.total;
         ratingStatus.rating = ratingStatus.rating / ratingStatus.total;
